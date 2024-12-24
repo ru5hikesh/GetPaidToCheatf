@@ -1,0 +1,40 @@
+.tableScrollStyle {
+  @apply rounded-md relative w-full overflow-auto;
+  &::-webkit-scrollbar {
+    display: flex;
+    height: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    @apply bg-primary/30; /* Adjust scrollbar thumb color */
+    border-radius: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    @apply bg-primary/10; /* Adjust scrollbar track color */
+  }
+}
+
+.tableContainer {
+  @apply flex flex-col items-start gap-5 w-full;
+  .tablewrapper {
+    @apply border border-[#1A1A1A] rounded-[10px] w-full max-h-[100vh] overflow-y-auto bg-transparent;
+
+    &::-webkit-scrollbar {
+      display: flex;
+      max-width: 6px !important;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      @apply bg-primary/30; /* Adjust scrollbar thumb color */
+      border-radius: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+      @apply bg-primary/10; /* Adjust scrollbar track color */
+    }
+  }
+  .pagination {
+    @apply flex items-center sm:justify-between justify-center w-full flex-wrap sm:gap-5 gap-10;
+  }
+}

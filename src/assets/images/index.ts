@@ -1,0 +1,28 @@
+const IMAGES = {
+  btc: new URL("./btc.png", import.meta.url).href,
+  bot: new URL("./bot.png", import.meta.url).href,
+  joystick: new URL("./joystick.png", import.meta.url).href,
+  litecoin: new URL("./litecoin.png", import.meta.url).href,
+  bg: new URL("./bg.png", import.meta.url).href,
+  apple_pay: new URL("./apple_pay.png", import.meta.url).href,
+  g_pay: new URL("./g_pay.png", import.meta.url).href,
+  cashapp: new URL("./cashapp.png", import.meta.url).href,
+  bank: new URL("./bank.png", import.meta.url).href,
+  paypal: new URL("./paypal.png", import.meta.url).href,
+  zelle: new URL("./zelle.png", import.meta.url).href,
+  c5: new URL("./c5.png", import.meta.url).href,
+  fornite: new URL("./fornite.png", import.meta.url).href,
+  volarant: new URL("./volarant.png", import.meta.url).href,
+  works1: new URL("./works1.png", import.meta.url).href,
+  works2: new URL("./works2.png", import.meta.url).href,
+  affialite_one: new URL("./affialite_one.png", import.meta.url).href,
+  affiliate: new URL("./affiliate.png", import.meta.url).href,
+  hook: new URL("./hook.png", import.meta.url).href,
+  cash: new URL("./cash.png", import.meta.url).href,
+  chat: new URL("./chat.png", import.meta.url).href,
+  discord: new URL("./discord.png", import.meta.url).href,
+  steam: new URL("./steam.png", import.meta.url).href,
+  youtube: new URL("./youtube.png", import.meta.url).href,
+};
+
+export default IMAGES;
