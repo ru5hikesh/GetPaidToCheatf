@@ -19,11 +19,11 @@ export default function DashboardLayout({
 }>) {
   return (
     <div className="relative w-screen h-screen flex flex-row items-start">
-      <div className="w-[25%] h-full overflow-auto pt-12 px-9 border-r border-r-[#141414]">
-        <Image src={Logo} alt="Logo" className="mb-14" priority />
+      <div className="w-[20%] h-full overflow-auto pt-12 px-2 border-r border-r-[#141414]">
+        <Image src={Logo} alt="Logo" className="mb-14 mx-4" priority />
         <SideBar />
       </div>
-      <div className="flex-1 w-[70%] h-full relative flex flex-col">
+      <div className="flex-1 w-[80%] h-full relative flex flex-col">
         <Nav />
         <div className="w-full overflow-auto backgroundEffect">{children}</div>
       </div>

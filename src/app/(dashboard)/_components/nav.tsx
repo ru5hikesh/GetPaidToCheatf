@@ -25,23 +25,24 @@ export default function Nav() {
           {pathname === "/dashboard-home"
             ? "Leaderboard"
             : pathname === "/dashboard"
-            ? "Welcome Back, Dhruv"
-            : pathname.includes("/keys")
-            ? "Get your keys"
-            : pathname === "/affiliate"
-            ? "Affiliate Center"
-            : pathname === "/subscriptions"}
+              ? "Welcome Back, Dhruv"
+              : pathname.includes("/keys")
+                ? "Get your keys"
+                : pathname === "/affiliate"
+                  ? "Affiliate Center"
+                  : pathname === "/subscriptions" ? "subscriptions" : ""}
         </h1>
         <p className="xl:text-lg text-xs font-normal text-foreground">
           {pathname === "/dashboard-home"
             ? "See Live Earnings of your fellow creators"
             : pathname === "/dashboard"
-            ? "See your Dashboard and content overview here"
-            : pathname.includes("/keys")
-            ? "Get your 24 hour temporary key for games"
-            : pathname === "/affiliate"
-            ? "Welcome abroad the affiliate center and earn"
-            : pathname === "/subscriptions"}
+              ? "See your Dashboard and content overview here"
+              : pathname.includes("/keys")
+                ? "Get your 24 hour temporary key for games"
+                : pathname === "/affiliate"
+                  ? "Welcome abroad the affiliate center and earn"
+                  : pathname === "/subscriptions" ? "See your active subscriptions here" : ""
+          }
         </p>
       </div>
       <div className="flex relative">
