@@ -21,7 +21,7 @@ export default function Nav() {
   return (
     <div className="min-h-[146px] z-[1] bg-background w-full flex flex-row items-center justify-between border-b border-b-[#141414] px-10">
       <div className="flex flex-col items-start gap-1">
-        <h1 className="xl:text-3xl text-sm font-bold text-foreground">
+      <h1 className="xl:text-3xl text-sm font-bold text-foreground">
           {pathname === "/dashboard-home"
             ? "Leaderboard"
             : pathname === "/dashboard"
@@ -30,9 +30,13 @@ export default function Nav() {
             ? "Get your keys"
             : pathname === "/affiliate"
             ? "Affiliate Center"
-            : pathname === "/subscriptions"}
-        </h1>
-        <p className="xl:text-lg text-xs font-normal text-foreground">
+            : pathname === "/subscriptions"
+            ? ""
+            : pathname === "/upload-video"
+            ? "Upload your video"
+            : ""}
+      </h1>
+      <p className="xl:text-lg text-xs font-normal text-foreground">
           {pathname === "/dashboard-home"
             ? "See Live Earnings of your fellow creators"
             : pathname === "/dashboard"
@@ -41,8 +45,13 @@ export default function Nav() {
             ? "Get your 24 hour temporary key for games"
             : pathname === "/affiliate"
             ? "Welcome abroad the affiliate center and earn"
-            : pathname === "/subscriptions"}
-        </p>
+            : pathname === "/subscriptions"
+            ? ""
+            : pathname === "/upload-video"
+            ? "See your Dashboard and content overview here"
+            : ""}
+      </p>
+
       </div>
       <div className="flex relative">
         <Input
