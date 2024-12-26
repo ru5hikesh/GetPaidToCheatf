@@ -30,7 +30,7 @@ export default function Nav() {
                 ? "Get your keys"
                 : pathname === "/affiliate"
                   ? "Affiliate Center"
-                  : pathname === "/subscriptions" ? "subscriptions" : ""}
+                  : pathname === "/subscriptions" ? "subscriptions" : pathname === "/video-history" ? "Video History" : ""}
         </h1>
         <p className="xl:text-lg text-xs font-normal text-foreground">
           {pathname === "/dashboard-home"
@@ -41,7 +41,7 @@ export default function Nav() {
                 ? "Get your 24 hour temporary key for games"
                 : pathname === "/affiliate"
                   ? "Welcome abroad the affiliate center and earn"
-                  : pathname === "/subscriptions" ? "See your active subscriptions here" : ""
+                  : pathname === "/subscriptions" ? "See your active subscriptions here" : pathname === "/video-history" ? "See your video History here" : ""
           }
         </p>
       </div>
