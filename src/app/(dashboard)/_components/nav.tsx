@@ -5,23 +5,20 @@ import { Input } from "@/components/ui/input";
 import { Icon } from "@iconify/react";
 import Image from "next/image";
 import ProfileAvatar from "@/assets/img/profile-avatar.png";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuLabel,
-  DropdownMenuRadioGroup,
-  DropdownMenuRadioItem,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
 export default function Nav() {
   const pathname = usePathname();
+
   return (
     <div className="min-h-[146px] z-[1] bg-background w-full flex flex-row items-center justify-between border-b border-b-[#141414] px-10">
       <div className="flex flex-col items-start gap-1">
-      <h1 className="xl:text-3xl text-sm font-bold text-foreground">
+        <h1 className="xl:text-3xl text-sm font-bold text-foreground">
           {pathname === "/dashboard-home"
             ? "Leaderboard"
             : pathname === "/dashboard"
@@ -31,12 +28,14 @@ export default function Nav() {
             : pathname === "/affiliate"
             ? "Affiliate Center"
             : pathname === "/subscriptions"
-            ? ""
+            ? "Subscriptions"
             : pathname === "/upload-video"
             ? "Upload your video"
+            : pathname === "/video-history"
+            ? "Video History"
             : ""}
-      </h1>
-      <p className="xl:text-lg text-xs font-normal text-foreground">
+        </h1>
+        <p className="xl:text-lg text-xs font-normal text-foreground">
           {pathname === "/dashboard-home"
             ? "See Live Earnings of your fellow creators"
             : pathname === "/dashboard"
@@ -46,12 +45,13 @@ export default function Nav() {
             : pathname === "/affiliate"
             ? "Welcome abroad the affiliate center and earn"
             : pathname === "/subscriptions"
-            ? ""
+            ? "See your active subscriptions here"
             : pathname === "/upload-video"
-            ? "See your Dashboard and content overview here"
+            ? "Upload your video content here"
+            : pathname === "/video-history"
+            ? "See your video history here"
             : ""}
-      </p>
-
+        </p>
       </div>
       <div className="flex relative">
         <Input
