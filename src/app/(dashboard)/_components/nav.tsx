@@ -33,6 +33,8 @@ export default function Nav() {
             ? "Upload your video"
             : pathname === "/video-history"
             ? "Video History"
+            : pathname === "/tutorials"
+            ? "Tutorials"
             : ""}
         </h1>
         <p className="xl:text-lg text-xs font-normal text-foreground">
@@ -50,6 +52,8 @@ export default function Nav() {
             ? "Upload your video content here"
             : pathname === "/video-history"
             ? "See your video history here"
+            : pathname === "/tutorials"
+            ? "Earn Keys by completing Tutorials"
             : ""}
         </p>
       </div>
