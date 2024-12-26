@@ -38,7 +38,7 @@ export function SchedulePicker() {
             type="time"
             value={selectedTime}
             onChange={handleTimeChange}
-            min={selectedDate === minDate ? minTime : undefined} // Restrict past times only for today
+            min={selectedDate === minDate ? minTime : undefined} 
             className="w-full bg-[#F056004D] text-white p-3 rounded-lg cursor-pointer"
           />
           
