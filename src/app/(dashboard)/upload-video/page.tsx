@@ -1,18 +1,26 @@
 "use client";
 
-import { useState } from "react";
-import { DetailsPage } from "./DetailsPage"; // Adjust the path as per your folder structure
+import { useState, useEffect } from "react";
+import { DetailsPage } from "./DetailsPage";
 import { VideoElementsPage } from "./VideoElementsPage";
+import { CheckPage } from "./CheckPage";
+import { VisibilityPage } from "./VisibilityPage";
 
 export default function Page() {
   const [step, setStep] = useState(1);
 
+  useEffect(() => {
+    requestAnimationFrame(() => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }, [step]);
+
   const handleNext = () => {
-    setStep((prev) => Math.min(prev + 1, 4)); // Increment step, max is 4
+    setStep((prev) => Math.min(prev + 1, 4));
   };
 
   const handlePrev = () => {
-    setStep((prev) => Math.max(prev - 1, 1)); // Decrement step, min is 1
+    setStep((prev) => Math.max(prev - 1, 1));
   };
 
   const renderStep = () => {
@@ -21,17 +29,18 @@ export default function Page() {
         return <DetailsPage onNext={handleNext} />;
       case 2:
         return <VideoElementsPage onNext={handleNext} onPrev={handlePrev} />;
-      // Add other cases for future steps
+      case 3:
+        return <CheckPage onNext={handleNext} onPrev={handlePrev} />;
+      case 4:
+        return <VisibilityPage onPrev={handlePrev} />;
       default:
         return null;
     }
   };
 
   return (
-    <div className="min-h-screen relative">
-      <div className="mx-auto max-w-4xl p-8">
-        {renderStep()}
-      </div>
+    <div className="relative">
+      <div className="mx-auto max-w-4xl p-8">{renderStep()}</div>
     </div>
   );
 }

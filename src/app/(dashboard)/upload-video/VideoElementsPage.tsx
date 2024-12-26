@@ -10,7 +10,7 @@ interface VideoElementsPageProps {
 
 export function VideoElementsPage({ onNext, onPrev }: VideoElementsPageProps) {
   return (
-    <div className="min-h-screen relative">
+    <div className="relative">
       {/* Gradient Background */}
       <div
         className="absolute inset-0"
@@ -114,7 +114,7 @@ export function VideoElementsPage({ onNext, onPrev }: VideoElementsPageProps) {
           </button>
           <button
             onClick={onNext}
-            className="rounded bg-[#F05600] px-8 py-2 font-medium text-white hover:bg-[#F05600]/90 transition-colors"
+            className="rounded bg-[#F05600] px-8 py-2 font-semibold text-black hover:bg-[#F05600]/90 transition-colors ml-auto"
           >
             NEXT
           </button>

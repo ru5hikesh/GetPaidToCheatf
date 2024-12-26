@@ -378,7 +378,7 @@ export function DetailsPage({ onNext }: DetailsPageProps) {
           <div className="mt-10">
         <button 
           onClick={onNext}
-          className="rounded bg-[#F05600] px-8 py-2 font-medium text-white hover:bg-[#F05600]/90 transition-colors"
+          className="rounded bg-[#F05600] px-8 py-2 font-medium text-black hover:bg-[#F05600]/90 transition-colors"
         >
           NEXT
         </button>
