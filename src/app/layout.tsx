@@ -14,9 +14,9 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Gasifyx",
+  title: "GetPaidToCheat",
   description:
-    "Gasifyx is a gas monitoring and safety system designed to help users track their LPG usage, detect leaks, and make gas ordering more convenient.",
+    "Earn money quiclky by showcasing cheats.",
 };
 
 export default function RootLayout({
