@@ -1,17 +1,15 @@
-# GetPaidToCheat
-Earn money quiclky by showcasing cheats.
-
+## Freelance Project - Made like 7-10 Frontend Pages 
 
 # Tech Stack
-
 Frontend : Next.js 
 Backend : Express.js, Prisma
 DB : PostgreSQL, 
 
 # Frontend Pictures (POW):
-  
-![Frontend Pages ](https://github.com/user-attachments/assets/ca671f60-c08b-4078-8fe2-197deb906b9e)
+![image](https://github.com/user-attachments/assets/8ea16112-a9af-4805-b6b8-2299bb739360)
 
+
+https://github.com/user-attachments/assets/22bc4070-8adf-4da7-be64-7ec0ceb9608b
 
 ![Tutorials1](https://github.com/user-attachments/assets/ddd076e8-20d0-4b32-8a02-a65913b2d01f)
 ![Tutorials2](https://github.com/user-attachments/assets/93d6dd82-0cc8-4d49-8f35-13529343561f)
